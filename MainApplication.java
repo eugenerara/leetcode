@@ -34,4 +34,10 @@ public class MainApplication {
         String solution = question14.longestCommonPrefix(new String[] {"carqwe","car","carasd"});
         System.out.println(solution);
     }
+
+    public static void Question20Runnable() {
+        Q20 question20 = new Q20();
+        boolean solution = question20.isValid("()[]{}");
+        System.out.println(solution);
+    }
 }
