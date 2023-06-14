@@ -3,7 +3,7 @@ package Questions.Easy;
 /**
  * Palindrome Number
  */
-public class Q2 {
+public class Q9 {
     public boolean isPalindrome(int x) {
         //Convert to String
         String input = String.valueOf(x);
