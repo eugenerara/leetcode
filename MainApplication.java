@@ -7,8 +7,9 @@ public class MainApplication {
 //        Question1Runnable();
 //        Question9Runnable();
 //        Question13Runnable();
-        Question14Runnable();
-
+//        Question14Runnable();
+//        Question20Runnable();
+        Question26Runnable();
     }
 
     public static void Question1Runnable() {
@@ -38,6 +39,12 @@ public class MainApplication {
     public static void Question20Runnable() {
         Q20 question20 = new Q20();
         boolean solution = question20.isValid("()[]{}");
+        System.out.println(solution);
+    }
+
+    public static void Question26Runnable() {
+        Q26 question26 = new Q26();
+        int solution = question26.removeDuplicates(new int[] {6,7,8,9,9,10});
         System.out.println(solution);
     }
 }
