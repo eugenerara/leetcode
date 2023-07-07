@@ -83,4 +83,10 @@ public class MainApplication {
         int solution = question58.lengthOfLastWord("Hello World");
         System.out.println(solution);
     }
+
+    public static void Question66Runnable() {
+        Q66 question66 = new Q66();
+        int[] solution = question66.plusOne(new int[]{4,3,2,1});
+        System.out.println(Arrays.toString(solution));
+    }
 }
