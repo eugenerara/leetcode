@@ -14,7 +14,8 @@ public class MainApplication {
 //        TestDomeQuestion();
 //        Question27Runnable();
 //        Question28Runnable();
-        Question35Runnable();
+//        Question35Runnable();
+        Question58Runnable();
     }
 
     public static void Question1Runnable() {
@@ -74,6 +75,12 @@ public class MainApplication {
     public static void Question35Runnable() {
         Q35 question35 = new Q35();
         int solution = question35.searchInsert(new int[]{1,3,5}, 5);
+        System.out.println(solution);
+    }
+
+    public static void Question58Runnable() {
+        Q58 question58 = new Q58();
+        int solution = question58.lengthOfLastWord("Hello World");
         System.out.println(solution);
     }
 }
