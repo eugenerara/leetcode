@@ -12,7 +12,9 @@ public class MainApplication {
 //        Question20Runnable();
 //        Question26Runnable();
 //        TestDomeQuestion();
-        Question27Runnable();
+//        Question27Runnable();
+//        Question28Runnable();
+        Question35Runnable();
     }
 
     public static void Question1Runnable() {
@@ -60,6 +62,18 @@ public class MainApplication {
     public static void Question27Runnable() {
         Q27 question27 = new Q27();
         int solution = question27.removeElement(new int[] {0,1,2,2,3,0,4,2}, 2);
+        System.out.println(solution);
+    }
+
+    public static void Question28Runnable() {
+        Q28 question28 = new Q28();
+        int solution = question28.firstOccurringIndex("abc", "c");
+        System.out.println(solution);
+    }
+
+    public static void Question35Runnable() {
+        Q35 question35 = new Q35();
+        int solution = question35.searchInsert(new int[]{1,3,5}, 5);
         System.out.println(solution);
     }
 }
