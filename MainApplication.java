@@ -1,4 +1,5 @@
 import Questions.Easy.*;
+import Questions.Practice.TestDome;
 
 import java.util.Arrays;
 
@@ -9,7 +10,9 @@ public class MainApplication {
 //        Question13Runnable();
 //        Question14Runnable();
 //        Question20Runnable();
-        Question26Runnable();
+//        Question26Runnable();
+//        TestDomeQuestion();
+        Question27Runnable();
     }
 
     public static void Question1Runnable() {
@@ -45,6 +48,18 @@ public class MainApplication {
     public static void Question26Runnable() {
         Q26 question26 = new Q26();
         int solution = question26.removeDuplicates(new int[] {6,7,8,9,9,10});
+        System.out.println(solution);
+    }
+
+    public static void TestDomeQuestion() {
+        String[] names1 = new String[] {"Ava", "Emma", "Olivia"};
+        String[] names2 = new String[] {"Olivia", "Sophia", "Emma"};
+        System.out.println(String.join(", ", TestDome.uniqueNames(names1, names2))); // should print Ava, Emma, Olivia, Sophia
+    }
+
+    public static void Question27Runnable() {
+        Q27 question27 = new Q27();
+        int solution = question27.removeElement(new int[] {0,1,2,2,3,0,4,2}, 2);
         System.out.println(solution);
     }
 }
