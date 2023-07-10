@@ -1,4 +1,5 @@
 import Questions.Easy.*;
+import Questions.Practice.SGPools;
 import Questions.Practice.TestDome;
 
 import java.util.Arrays;
@@ -15,7 +16,8 @@ public class MainApplication {
 //        Question27Runnable();
 //        Question28Runnable();
 //        Question35Runnable();
-        Question58Runnable();
+//        Question58Runnable();
+        sgPoolsRunnable();
     }
 
     public static void Question1Runnable() {
@@ -88,5 +90,12 @@ public class MainApplication {
         Q66 question66 = new Q66();
         int[] solution = question66.plusOne(new int[]{4,3,2,1});
         System.out.println(Arrays.toString(solution));
+    }
+
+    public static void sgPoolsRunnable() {
+        SGPools sgPools = new SGPools();
+        String solution = sgPools.hideString("123-456-789-0", 5, '*', '-');
+        System.out.println(solution);
+
     }
 }
