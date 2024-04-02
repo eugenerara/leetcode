@@ -5,13 +5,17 @@ package Questions.Easy;
  */
 public class Q9 {
     public boolean isPalindrome(int x) {
-        //Convert to String
-        String input = String.valueOf(x);
-        for (int i = 0; i < input.length()/2; i++) {
-            if (input.charAt(i) != input.charAt(input.length()-(i+1))) {
-                return false;
-            }
+        if (x < 0)
+            return false;
+
+        long reversed = 0;
+        int y = x;
+
+        while (y > 0) {
+            reversed = reversed * 10 + y % 10;
+            y /= 10;
         }
-        return true;
+
+        return reversed == x;
     }
 }
